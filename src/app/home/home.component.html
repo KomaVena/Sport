@@ -1,0 +1,87 @@
+<!-- mein menu start-->
+
+<body>
+
+
+
+  <div class="header">
+    <h2 class="logo">Box</h2>
+    <input type="checkbox" id="chk" (click)="toggleCards()">
+    <label for="chk" class="show-menu-btn">
+
+      <img src="/assets/img/menu.svg
+    " alt="">
+    </label>
+
+    <ul class="menu">
+
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/about">About Us</a>
+      <a routerLink="/timeTable">Timetable</a>
+      <a routerLink="/contact">Contact </a>
+
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+
+    </ul>
+  </div>
+  <!-- mein menu start end-->
+
+  <!--slider start-->
+  <div *ngIf="toggle">
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="30000" >
+          <img src="assets/img/Progect1.jpeg" class="d-block w-100 slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="textSliderOne">
+              <p class="sportStart">Спортивный </p>
+              <p class="sportEnd">Клуб <span>Академия</span> </p>
+              <button class="btnOne startBtn">chat</button>
+              <button class="btnOne endBtn">call me </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="30000">
+          <img src="assets/img/Progect1.jpeg" class="d-block w-100 slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5></h5>
+            <p></p>
+
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="30000">
+          <img src="assets/img/Progect1.jpeg" class="d-block w-100 slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+  </div>
+</body>

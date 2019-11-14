@@ -1,0 +1,232 @@
+body {
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  height: 100px;
+  background: #00000060;
+  padding: 0 20px;
+  color: #fff;
+
+}
+
+
+
+
+//------------------------logo start 
+
+
+.logo {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+
+}
+
+
+//------------------------logo end
+
+
+//------------------------menu start 
+
+
+.menu {
+  float: right;
+  line-height: 100px;
+
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.menu a:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.menu a.active {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.show-menu-btn {
+  float: right;
+}
+
+.show-menu-btn i {
+  line-height: 100px;
+}
+
+// .menu a:hover,
+// .show-menu-btn:hover,
+// .hide-menu-btn:hover {
+// }
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+
+//------------------------menu end 
+
+
+
+//------------------------menu start adp
+@media screen and (max-width:600px) {}
+
+@media screen and (max-width:750px) {
+
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(68, 65, 65);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid white;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    width: auto;
+    height: auto;
+
+  }
+
+  .menu a.active {
+    border-bottom:
+      1px solid white;
+  }
+
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #chk:checked~.menu {
+    right: 0;
+  }
+}
+
+//------------------------menu end adp
+
+
+
+//----------------------------- slider start 
+.slider {
+  height: 100vh ! important;
+  width: 100%;
+}
+
+.carousel-indicators {
+  opacity: 0.2;
+}
+
+.textSliderOne {
+  float: left;
+  text-align: left;
+  position: fixed;
+  top: 31%;
+  font-size: 70px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+.textSliderOne span {
+  color: red;
+}
+
+//animation text start
+
+.sportStart {
+  transform: translateX(150rem);
+  animation: slideIn 3s forwards;
+}
+
+.sportEnd {
+  transform: translateX(-150rem);
+  animation: slideIn 4s forwards;
+}
+
+.startBtn {
+  transform: translateX(-150rem);
+  animation: slideIn 3s forwards;
+}
+
+.endBtn {
+  transform: translateX(150rem);
+  animation: slideIn 4.5s forwards;
+}
+
+//animation text end
+
+
+
+//------------------ slider btn  start
+
+.btnOne {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 35px;
+  width: 25%;
+  height: 45px;
+  background: none;
+  border: 3px solid red;
+  color: red;
+}
+
+.btnOne:focus {
+  outline: none;
+}
+
+.btnOne:hover {
+  background: rgba(255, 0, 0, 0.527);
+  color: white;
+  border: 3px solid white;
+}
+
+//------------------ slider btn end
+@keyframes slideIn {
+  from {}
+
+  to {
+    transform: translateX(0);
+  }
+}
