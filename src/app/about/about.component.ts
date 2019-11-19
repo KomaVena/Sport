@@ -12,4 +12,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggle = true;
+  toggleCards() {
+    this.toggle = !this.toggle
+  }
 }

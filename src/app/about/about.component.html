@@ -1,1 +1,31 @@
-<p>about works!</p>
+<body>
+
+
+  <div class="header">
+    <div class="container">
+
+      <h2 class="logo"><img class="logo" src="assets/img/Logo.png" alt=""></h2>
+      <input type="checkbox" id="chk" (click)="toggleCards()">
+      <label for="chk" class="show-menu-btn">
+
+        <img class="menuBar" src="/assets/img/menu.svg
+    " alt="">
+      </label>
+
+
+      <ul class="menu">
+
+        <a routerLink="/">Главная</a>
+        <a routerLink="/about" routerLinkActive="active">Про нас</a>
+        <a routerLink="/timeTable">Расписание</a>
+        <a routerLink="/contact">Контакты</a>
+
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="toggle"></div>
+</body>
