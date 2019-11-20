@@ -1,13 +1,10 @@
 <body>
-
-
   <div class="header">
     <div class="container">
 
-      <h2 class="logo"><img class="logo" src="assets/img/Logo.png" alt=""></h2>
+      <h2 class="logo"><img class="logo" src="assets/img/logo.png" alt=""></h2>
       <input type="checkbox" id="chk" (click)="toggleCards()">
       <label for="chk" class="show-menu-btn">
-
         <img class="menuBar" src="/assets/img/menu.svg
     " alt="">
       </label>
@@ -27,5 +24,49 @@
       </ul>
     </div>
   </div>
-  <div *ngIf="toggle"></div>
+  <div *ngIf="toggle">
+
+    <div class="firstBox">
+
+      <h1>Lorem, ipsum.
+      </h1>
+    </div>
+    <div class="fonBox">
+
+    </div>
+
+
+    <div class="secondBox">
+      <div class="container">
+
+        <div class="textCard">
+          <img src="assets/img/Progect1.jpeg" alt="">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus ea saepe tempora autem porro
+            atque totam libero facere ullam? Natus reprehenderit dolorem voluptas, repellat beatae obcaecati quos
+            voluptatem esse vero totam sequi cumque magni porro aut aliquid nostrum et tempora debitis adipisci odio
+            animi numquam nam eos sunt. Et.</p>
+        </div>
+        <hr>
+        <button class="secondBoxBtn"><img src="assets/img/gallery.svg">Галерея</button>
+      </div>
+    </div>
+  </div>
+  <div class="fonBox">
+
+  </div>
+  <div class="footer">
+    <div class="container">
+
+
+
+
+
+    </div>
+  </div>
+  <div class="footerbtn">
+    <form action="/about">
+      <button class="Btnup"><img src="assets/img/up-arrow.svg"></button>
+    </form>
+  </div>
 </body>
