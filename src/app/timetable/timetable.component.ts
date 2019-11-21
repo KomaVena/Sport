@@ -11,5 +11,8 @@ export class TimetableComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  toggle = true;
+  toggleCards() {
+    this.toggle = !this.toggle
+  }
 }

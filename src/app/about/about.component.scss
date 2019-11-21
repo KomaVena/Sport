@@ -1,6 +1,6 @@
 // heder start 
 body {
- 
+
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
   z-index: 2;
   width: 100%;
   height: 100px;
-  background: #00000057;
+  background: #7c7b7b8d;
   padding: 0 20px;
   color: #fff;
 }
@@ -134,18 +134,14 @@ body {
 //FirstBOx start
 
 .firstBox {
-  width: 100%;
   height: 450px;
-  background-image: url(src/assets/img/Progect1.jpeg);
+  background-image: url(src/assets/img/AboutOne.jpg);
   background-size: cover;
 }
 
-.firstBox h1 {
-  color: white;
-  padding-top: 6.5%;
-  text-align: center;
-  font-size: 6vw;
 
+.line {
+  background-color: white;
 }
 
 //FirstBOx end
@@ -164,9 +160,10 @@ body {
 //secondBox start
 
 .secondBox {
+  background: #242424;
   width: 100%;
   height: 350px;
-  background-color: burlywood;
+  color: white;
 }
 
 .textCard img {
@@ -177,7 +174,7 @@ body {
 
 .textCard h1 {
   text-align: center;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left: 45%;
 }
 
@@ -189,7 +186,7 @@ body {
 
 .secondBoxBtn {
   margin-top: 0.8%;
-  margin-left: 35%;
+  margin-left: 34%;
   font-size: 16px;
   background: rgb(250, 134, 39);
   border: none;
@@ -224,14 +221,34 @@ hr {
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 100%;
   background-color: #1b1b1b;
+  color: white;
 }
 
-.footerbtn  form{
+.kont {
+  display: inline-block;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+}
+
+.kont p {
+  color: #807d7d;
+  font-size: 14px;
+}
+
+.kont h5 {
+  color: rgb(250, 134, 39);
+  margin-top: 6%;
+  font-size: 16px;
+}
+
+
+//footer end
+.footerbtn form {
   width: 100%;
   height: 40px;
- 
+
 
 }
 
@@ -239,7 +256,6 @@ hr {
   outline: none;
   border: none;
   border-top: 1px solid white;
-  ;
   background-color: #1b1b1b;
   width: 100%;
   height: 100%;
