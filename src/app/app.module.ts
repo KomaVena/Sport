@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -18,7 +19,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     TimetableComponent,
     ChatComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

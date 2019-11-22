@@ -18,5 +18,6 @@ export class HomeComponent implements OnInit {
     this.toggle = !this.toggle
   }
 
-  
+
+    
 }

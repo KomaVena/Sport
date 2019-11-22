@@ -11,5 +11,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  toggle = true;
+  toggleCards() {
+    this.toggle = !this.toggle
+  }
 }
