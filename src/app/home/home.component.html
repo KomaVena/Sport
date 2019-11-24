@@ -34,7 +34,13 @@
 
   <!--slider start-->
   <div *ngIf="toggle">
-
+  <div class="adptPod"></div>
+    <div class="meinInfo">
+      <h3 class="leftAdpt">Спортивный Клуб <span class="rightAdpt">Академия</span></h3>
+      <button class="AdptOne" routerLink="/contact"><img src="assets/img/place.svg">Контакты</button>
+      <button class="AdptOne" onClick="location.href='mailto:n.b_o_n_u_s@ukr.net?subject='"><img
+          src="assets/img/message.svg">Напиши мне</button>
+    </div>
 
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -55,7 +61,8 @@
 
 
             <div class="SocialMenu">
-              <a href=""> <img class="SMF" src="assets/img/facebook.svg" alt="facebook"></a>
+              <a href="https://www.facebook.com/boxingkievua/"> <img class="SMF" src="assets/img/facebook.svg"
+                  alt="facebook"></a>
               <a href="https://www.instagram.com/sc_academia/"> <img class="SMI" src="assets/img/instagram.svg"
                   alt="instagram"></a>
             </div>
@@ -68,7 +75,10 @@
 
               <button class="btnOne startBtn " routerLink="/contact"><img src="assets/img/place.svg">Контакты</button>
 
-              <button class="btnOne endBtn"><img src="assets/img/message.svg">Напиши мне</button>
+              <button class="btnOne endBtn" onClick="location.href='mailto:n.b_o_n_u_s@ukr.net?subject='"><img
+                  src="assets/img/message.svg">Напиши мне</button>
+
+
             </div>
 
 
@@ -90,7 +100,7 @@
           <img src="assets/img/third.png" class="d-block w-100 slider" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <div class="textSliderTwo">
-              <p class="sportStartTwo">Наша команда</p>
+              <p class="sportStartTwo">Тренируйся с чемпионами</p>
             </div>
           </div>
         </div>

@@ -132,6 +132,67 @@ body {
   }
 }
 
+
+//burger
+
+
+@media screen and (max-width:768px) {
+  .menuBar {
+    position: relative;
+    right: -31px;
+  }
+}
+
+
+
+@media screen and (max-width:425px) {
+  .trener {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .menuBar {
+    position: relative;
+    right: -31px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .menuBar {
+    position: relative;
+    top: -70px;
+    right: -31px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .menuBar {
+    position: relative;
+    top: -76px;
+    right: -31px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .menuBar {
+    position: relative;
+    right: -31px;
+  }
+}
+
+
+
+//burger
+
+
+
+
 //start
 .startT {
   color: white;
@@ -143,14 +204,14 @@ body {
 
 .fir {
   text-align: center;
-  padding-top: 6.5%;
-  padding-bottom: 1%;
+  padding-top: 125px;
+  padding-bottom: 18px;
 }
 
 //table start
 .mama {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+
 }
 
 thead .colorOr th {
@@ -177,9 +238,10 @@ thead .colorOr th {
 .info {
   text-align: left;
   font-size: 14px;
-  padding-left: 8.5%;
+  padding-left: 35px;
   line-height: 12px;
-
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .star {
@@ -194,21 +256,23 @@ thead .colorOr th {
 
 //card
 .card {
-  width: 80%;
-  height: 80%;
-  display: inline-block;
+  padding-top: 10px;
   background-color: #242424;
-  margin-left: 20px;
+  border: none;
+
+
 }
 
-.card img {
-  width: 60%;
-  margin-left: 19%;
-  padding-top: 10%;
+.card img {}
+
+.card-text {
+  text-align: center;
 }
 
 .price {
-  margin-left: 7.5%;
+  display: flex;
+  justify-content: center;
+
 }
 
 .cardPrice {

@@ -1,18 +1,126 @@
 body {
   overflow: hidden;
   font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 2;
   height: 100px;
-  background: #7c7b7b8d;
+  background: #a09f9f8d;
   padding: 0 20px;
   color: #fff;
+}
+
+//---adpt menu start
+.adptPod {
+  position: fixed;
+  bottom: 350px;
+  z-index: 2;
+  width: 100%;
+  height: 200px;
+  background-color: #a09f9f8d;
+  display: none;
+}
+
+.AdptOne {
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 2px;
+  background: rgb(250, 134, 39);
+  border: none;
+  color: white;
+  transform: translateY(150rem);
+  animation: slideIn 1s forwards;
+}
+
+.AdptOne:focus {
+  outline: none;
+}
+
+.AdptOne:hover {
+  background: rgba(250, 134, 39, 0.609);
+}
+
+.meinInfo {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  bottom: 100px;
+  right: 47px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+.meinInfo span {
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width:425px) {
+  .meinInfo {
+    position: fixed;
+    z-index: 2;
+    bottom: 50%;
+    right: 47px;
+    display: block;
+  }
+
+  .adptPod {
+    display: block;
+    position: fixed;
+    bottom: 320px;
+    z-index: 2;
+    width: 100%;
+    height: 200px;
+    background-color: #a09f9f8d;
+   
+  }
 
 }
+
+@media screen and (max-width:375px) {
+  .meinInfo {
+    position: fixed;
+    z-index: 2;
+    bottom: 50%;
+    right: 25px;
+
+    display: block;
+  }
+
+  .adptPod {
+    display: block;
+    position: fixed;
+    bottom: 320px;
+    z-index: 2;
+    width: 100%;
+    height: 200px;
+    background-color: #a09f9f8d;
+   
+  }
+
+
+}
+
+@media screen and (max-width:320px) {
+  .meinInfo {
+    position: fixed;
+    z-index: 2;
+    bottom: 50%;
+    right: 0px;
+    display: block;
+  }
+}
+
+//---adpt menu end
 
 
 //------------------------logo start 
@@ -27,6 +135,10 @@ body {
 .logo {
   float: left;
 }
+
+
+
+
 
 
 //------------------------logo end
@@ -150,9 +262,7 @@ body {
   }
 
 
-  #pod {
-    display: none;
-  }
+
 
   .carousel-indicators {
     display: none;
@@ -208,28 +318,10 @@ body {
   }
 
 
-  #pod {
-    display: none;
-  }
+
 
   .carousel-indicators {
     display: none;
-  }
-}
-
-@media screen and (max-width:375px) {
-  .logo img {
-    width: 60%;
-    height: 60%;
-    margin-bottom: -100px;
-  }
-}
-
-@media screen and (max-width:320px) {
-  .logo img {
-    width: 60%;
-    height: 60%;
-    margin-bottom: -100px;
   }
 }
 
@@ -243,14 +335,62 @@ body {
 
 
 
+
+
+
 //------------------------menu end adp
 
+//Burger start
+@media screen and (max-width:425px) {
+  .trener {
+    padding-bottom: 40px;
+  }
+}
 
+@media screen and (max-width:425px) {
+  .menuBar {
+    position: relative;
+    right: -31px;
+
+  }
+}
+
+@media screen and (max-width:320px) {
+  .menuBar {
+    position: relative;
+    top: -76px;
+    right: -31px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .menuBar {
+    position: relative;
+    top: -76px;
+    right: -31px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .menuBar {
+    position: relative;
+    right: -31px;
+  }
+}
+
+//Burger end
 
 //----------------------------- slider start 
+
 .slider {
-  height: 100vh ! important;
-  width: 100%;
+  height: 100vh;
+
+
 }
 
 // carousel-indicators start
@@ -278,12 +418,15 @@ body {
   height: 500px;
   background: #a09f9f8d;
   transform: translateX(-200rem);
-  animation: slideIn 2s forwards;
+  animation: slideIn 1.5s forwards;
 }
 
 .SocialMenu {
-  position: relative;
-  left: 50%;
+  position: fixed;
+  z-index: 0;
+  opacity: 0.7;
+  left: 85%;
+  top: 92%;
 }
 
 .SMF {
@@ -337,28 +480,32 @@ body {
 
 //animation text start
 .sportStart {
+  padding-left: 36px;
   transform: translateX(150rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 0.5s forwards;
 }
 
 .sportEnd {
+
   transform: translateX(-150rem);
-  animation: slideIn 2s forwards;
+  animation: slideIn 1s forwards;
 }
 
 .startBtn {
   transform: translateX(-150rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 0.5s forwards;
+
 }
 
 .endBtn {
   transform: translateX(150rem);
-  animation: slideIn 2s forwards;
+  animation: slideIn 1s forwards;
+
 }
 
 .sportStartTwo {
   transform: translateY(150rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 1.5s forwards;
 
 }
 
@@ -367,14 +514,16 @@ body {
 
 
 //------------------ slider btn  start
+
 .btnOne {
+  text-decoration: none;
   font-size: 16px;
-  margin-right: 15px;
-  width: 200px;
-  height: 40px;
+  margin-right: 20px;
   background: rgb(250, 134, 39);
   border: none;
   color: white;
+  width: 220px;
+  height: 50px;
 }
 
 .btnOne:focus {
