@@ -41,7 +41,7 @@ input[type="checkbox"] {
 .lightbox {
   z-index: 1;
   min-height: 100%;
-  overflow: hidden;
+  overflow: auto;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -93,7 +93,7 @@ input[type="checkbox"]:checked~.grid {
   z-index: 0;
   height: 100%;
   padding: 16px;
-  overflow: hidden;
+  overflow: auto;
   background-color: #222;
   text-align: center;
   -webkit-transition: opacity .75s;

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Box</title>
+  <title>BoxingUa</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,6 +19,33 @@
 </head>
 
 <body>
+  <div class="preloader">
+
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+  
+    </div>
+  
+  </div>
+ <!--spiner start-->
+ <script>
+    window.onload = function () {
+      document.body.classList.add('loaded');
+    }
+  </script>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <!--spiner end-->
+  
+  
   <app-root></app-root>
   <!--b start-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -30,8 +57,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-
-  <!--b end-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256–2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { SpinerComponent } from './spiner/spiner.component';
 
 
 
@@ -20,7 +21,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     TimetableComponent,
     ChatComponent,
     ContactComponent,
-    GalleryComponent
+    GalleryComponent,
+    SpinerComponent
   ],
   imports: [
     BrowserModule,
