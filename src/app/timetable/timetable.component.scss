@@ -255,15 +255,23 @@ thead .colorOr th {
 //table end
 
 //card
+@media screen and (max-width:425px) {
+  .card img {
+    width: 70%;
+    margin-left: 19px;
+  }
+}
+
 .card {
   padding-top: 10px;
   background-color: #242424;
   border: none;
-
-
 }
 
-.card img {}
+.card img {
+  width: 70%;
+  margin-left: 42px;
+}
 
 .card-text {
   text-align: center;
@@ -333,3 +341,4 @@ thead .colorOr th {
 }
 
 //footer end
+
